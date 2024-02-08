@@ -52,15 +52,16 @@ describe('General components test', () => {
 // })
 describe('Correct number of cards', () => {
 
-    it('makes the number of cards correct', () => {
+    it('makes the number of cards correct', async () => {
         render(<App />)
 
-        const numberOfCards = screen.queryAllByTestId('card')
-        expect(numberOfCards).toHaveLength()
-
+        const numberOfCards = await screen.findAllByTestId('card')
+        expect(numberOfCards).toHaveLength(150)
     })
-
 })
+// test ok
+
+
 // describe('FetchComponent behavior', () => {
 
 // })
