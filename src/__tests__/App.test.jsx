@@ -1,8 +1,8 @@
-import { render, screen, fireEvent } from "@testing-library/react"
+import { render, screen, } from "@testing-library/react"
 import App from "../App"
 // import Welcome from "../components/Welcome"
 import MyFooter from "../components/MyFooter"
-import CommentArea from "../components/CommentArea"
+
 
 
 
